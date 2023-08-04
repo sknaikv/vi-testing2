@@ -145,7 +145,6 @@
     width: 100%;
     background: linear-gradient(225deg, #f3f33b, #de17607a, #65d4e82c);
     background: -webkit-linear-gradient(225deg, #e6a5bd2a, #371dfca6, #65d4e87a);
-    /*  this color scheme is from - https://uigradients.com/#Wiretap  */
     background-size: 300% 300%;
     animation: GradientAnimation 15s ease infinite;
     -webkit-animation: GradientAnimation 15s ease infinite;
@@ -282,7 +281,7 @@ li {
 
 .hero-content {
     display: flex;
-    margin: 40px 50px;
+    margin: auto;
     padding-bottom: 20px;
 }
 
@@ -291,7 +290,8 @@ li {
     width: 50%;
     /* border: 1px solid red; */
     padding: 5px 40px;
-    /* margin: 80px 10px; */
+    margin: 80px 10px;
+    /* margin: auto; */
     line-height: 22px;
     font-family: 'Mulish';
     font-weight: 300;
@@ -335,6 +335,10 @@ li {
 
 .hero-content2 h2 {
     color: #de1760c5;
+}
+
+.hero-img>svg{
+    /* height: 100%; */
 }
 
 .workplace {
@@ -569,7 +573,7 @@ li {
 .mission,
 .strength {
     width: 50%;
-    padding: 10px 4.5rem;
+    padding: 10px 3.5rem;
     z-index: 99;
     position: relative;
     top: -2rem;
@@ -578,14 +582,14 @@ li {
 }
 
 .vision {
-    top: -25rem;
+    top: -27rem;
 }
 
 .strength {
     position: relative;
     margin: auto;
     text-align: center;
-    top: -33rem;
+    top: -33.5rem;
     font-size: 1.2rem;
     line-height: 45px;
     font-weight: 550;
@@ -607,6 +611,7 @@ li {
     margin: auto;
     line-height: 30px;
     top: 3rem;
+    margin-bottom: 2rem;
     z-index: 99;
     font-size: 1.2rem;
 }
@@ -706,6 +711,23 @@ li {
 .client-img2>img {
     width: 100%;
 }
+
+/* about********************************************************************************************* */
+
+#about{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    flex-direction: column;
+    padding: 3rem 3rem;
+    text-align: center;
+    line-height: 2;
+}
+
+
+
+
 
 
 
@@ -1095,9 +1117,183 @@ li {
 }
 
 @media screen and (max-width:1230px) and (min-width:1100px){
-    #client{
+    /* #client{
         height: 293vh;
+    } */
+}
+
+@media screen and (max-width:1200px) and (min-width:1000px){
+    .wrk-boxes{
+        font-size: 0.9rem;
     }
+
+    .pro-agency-text>h5,li{
+        font-size: 0.9rem;
+    }
+
+    .quality-text>p{
+        font-size: 0.9rem;
+    }
+
+    .thepolicy>h5{
+        font-size: 1rem;
+    }
+
+    .mission{
+        top: -31.5rem;
+    }
+
+    .vision{
+        top: -20rem;
+    }
+
+    .strength{
+        top: -30rem;
+    }
+
+    .client-list>li{
+        font-size: 0.8rem;
+    }
+
+    .contact-text>h3{
+        font-size: 0.9rem;
+    }
+
+    .footer-main{
+        font-size: 0.9rem;
+    }
+
+    #policy>h1{
+        font-size: 2rem!important;
+    }
+    #client>h1{
+        font-size: 2rem!important;
+    }
+    #contact>h1{
+        font-size: 2rem!important;
+    }
+    #services>h1{
+        font-size: 2rem!important;
+    }
+
+    .ourpolicy::before{
+        width: 6.2rem;
+        height: 0.6rem;
+        margin-top: 0;
+    }
+    .ourservice::before{
+        width: 6.2rem;
+        height: 0.6rem;
+        margin-top: 0;
+    }
+
+    #landing-title2::before{
+        width: 6.2rem;
+        height: 0.6rem;
+        /* margin-top: 0; */
+    }
+    
+    #about>h1{
+        font-size: 2rem!important;
+    }
+}
+
+@media screen and (max-width:999px) and (min-width:800px){
+    .landing-title2{
+        font-size: 2rem!important;
+    }
+    
+    .landing-title2::before{
+        width: 8.2rem!important;
+        height: 0.6rem!important;
+    }
+
+    .hero-content2>h4{
+        font-size: 0.9rem;
+    }
+    
+    .wrk-boxes{
+        font-size: 0.8rem;
+    }
+
+    .pro-agency-text>h5,li{
+        font-size: 0.8rem;
+    }
+
+    .quality-text>p{
+        font-size: 0.8rem;
+    }
+
+    .thepolicy>h5{
+        font-size: 1rem;
+    }
+
+    .mission{
+        top: -30.5rem;
+    }
+
+    .vision{
+        top: -16rem;
+    }
+
+    .strength{
+        top: -30rem;
+        line-height: 33px;
+    }
+
+    .client-list>li{
+        font-size: 0.8rem;
+    }
+
+    .contact-text>h3{
+        font-size: 0.9rem;
+    }
+
+    .footer-main{
+        font-size: 0.9rem;
+    }
+    .contact-img{
+        width: 25vw;
+        bottom: 15rem;
+    }
+
+    #contact{
+        margin-bottom: 5rem;
+    }
+
+    .contact-img2{
+        width: 23vw;
+        top: -5rem;
+    }
+    
+    #policy>h1{
+        font-size: 2rem!important;
+    }
+    #client>h1{
+        font-size: 2rem!important;
+    }
+    #contact>h1{
+        font-size: 2rem!important;
+    }
+    #services>h1{
+        font-size: 2rem!important;
+    }
+
+    .ourpolicy::before{
+        width: 6.2rem;
+        height: 0.6rem;
+        margin-top: 0;
+    }
+    .ourservice::before{
+        width: 6.2rem;
+        height: 0.6rem;
+        margin-top: 0;
+    }
+
+    #about>h1{
+        font-size: 2rem!important;
+    }
+ 
 }
 
 @media screen and (max-width:799px){
