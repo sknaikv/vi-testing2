@@ -139,6 +139,44 @@
 
 
 
+ /* gradient-bg */
+ .background {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(225deg, #f3f33b, #de17607a, #65d4e82c);
+    background: -webkit-linear-gradient(225deg, #e6a5bd2a, #371dfca6, #65d4e87a);
+    /*  this color scheme is from - https://uigradients.com/#Wiretap  */
+    background-size: 300% 300%;
+    animation: GradientAnimation 15s ease infinite;
+    -webkit-animation: GradientAnimation 15s ease infinite;
+  }
+  
+ 
+   
+  
+  @keyframes GradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  @-webkit-keyframes GradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
 
 
 
@@ -156,6 +194,12 @@
 
 
 
+
+
+
+img{
+    max-width: 100%;
+}
 
 
 
@@ -598,17 +642,17 @@ li {
 /* client************************************************************************************************************** */
 
 #client {
-    margin-top: 5rem;
+    /* margin-top: 5rem; */
     /* background-image: url(./images/bg15.png);
     background-repeat: no-repeat;
     background-position: center; */
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    /* flex-direction: column; */
     width: 90%;
     margin: auto;
     padding: 20px;
     margin-top: -30rem;
-    height: 280vh;
+    /* height: 280vh; */
     /* background-color: rebeccapurple; */
 }
 
@@ -1100,8 +1144,8 @@ li {
 
  
 
-    .nav-links ul li:hover:active{
-        background-color: #fff;
+    .nav-links ul li:hover{
+        background-color: rgb(224, 224, 224);
     }
 
     .nav-links ul li a{
@@ -1113,5 +1157,44 @@ li {
         left: 0;
     }
 
-    
+   
 }
+
+ /* @media screen and (max-width:1326px) and (min-width:1200px){
+    #client{
+        height: 350vh;
+    }
+ } */
+
+
+/* @media screen and (max-width:768px) and (min-width:500px){
+    .hero-text>h1{
+        font-size: 1.5rem!important;
+        margin: 8px 0px;
+    }
+
+    .hero-text>h5{
+        font-size: .7rem!important;
+        line-height: 20px!important;
+    }
+
+    .hero-text>h3{
+        font-size: 0.8rem;
+    }
+
+    #landing-title::before {
+        width: 4.2rem;
+        height: 0.4rem;
+        margin-top: -6px;
+        left: 12%!important;
+    }
+
+    .hero-img>svg{
+        width: 40vw;
+        height: auto;
+    }
+
+    .hero-img{
+        bottom: 0rem;
+    }
+} */
