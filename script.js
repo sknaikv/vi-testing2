@@ -41,7 +41,16 @@ function loco() {
 
 
 
+//topview
 
+const topview = document.querySelector(".topview");
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+        topview.classList.add("active");
+    } else {
+        topview.classList.remove("active");
+    }
+})
 
 
 
