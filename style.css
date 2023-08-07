@@ -139,8 +139,9 @@
 
 
 
- /* gradient-bg */
- .background {
+
+/* gradient-bg */
+/* .background {
     height: 100%;
     width: 100%;
     background: linear-gradient(225deg, #f3f33b, #de17607a, #65d4e82c);
@@ -148,34 +149,38 @@
     background-size: 300% 300%;
     animation: GradientAnimation 15s ease infinite;
     -webkit-animation: GradientAnimation 15s ease infinite;
-  }
-  
- 
-   
-  
-  @keyframes GradientAnimation {
+  } */
+
+
+
+
+@keyframes GradientAnimation {
     0% {
-      background-position: 0% 50%;
+        background-position: 0% 50%;
     }
+
     50% {
-      background-position: 100% 50%;
+        background-position: 100% 50%;
     }
+
     100% {
-      background-position: 0% 50%;
+        background-position: 0% 50%;
     }
-  }
-  
-  @-webkit-keyframes GradientAnimation {
+}
+
+@-webkit-keyframes GradientAnimation {
     0% {
-      background-position: 0% 50%;
+        background-position: 0% 50%;
     }
+
     50% {
-      background-position: 100% 50%;
+        background-position: 100% 50%;
     }
+
     100% {
-      background-position: 0% 50%;
+        background-position: 0% 50%;
     }
-  }
+}
 
 
 
@@ -196,7 +201,7 @@
 
 
 
-img{
+img {
     max-width: 100%;
 }
 
@@ -221,7 +226,7 @@ li {
     list-style: none;
 }
 
-#main{
+#main {
     background-color: #f5f5f580;
 }
 
@@ -303,7 +308,7 @@ li {
     /* position: relative; */
     display: flex;
     flex-grow: 1;
-    width: 50%;
+    width: 5vw;
     position: relative;
     bottom: 5rem;
     height: 50%;
@@ -313,6 +318,27 @@ li {
 
 .hero-img img {
     width: 92%;
+}
+
+.herobtn {
+    margin: 3rem 0;
+}
+
+.herobtn>a>button {
+    padding: 1vw;
+    border-radius: 5px;
+    border: none;
+    background-color: #6a61fb;
+    color: white;
+    font-size: 1.2vw;
+    font-family: 'Poppins';
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.herobtn>button:hover {
+    background-color: #463af8;
 }
 
 .hero-text::after {
@@ -337,7 +363,7 @@ li {
     color: #de1760c5;
 }
 
-.hero-img>svg{
+.hero-img>svg {
     /* height: 100%; */
 }
 
@@ -468,7 +494,7 @@ li {
     list-style: upper-roman;
     width: 80%;
     padding: 5px;
-    text-wrap:wrap;
+    text-wrap: wrap;
 }
 
 .pro-agency>.pro-agency-text>h3 {
@@ -714,7 +740,7 @@ li {
 
 /* about********************************************************************************************* */
 
-#about{
+#about {
     width: 90%;
     display: flex;
     justify-content: center;
@@ -801,7 +827,8 @@ li {
 
 .footer-main>.logo {
     display: flex;
-    margin-left: 8rem;
+    margin-left: 0rem;
+    margin: 0 auto;
 }
 
 .footer-main>h4>a {
@@ -1017,12 +1044,12 @@ li {
 
 
 
-.hamburger{
+.hamburger {
     display: none;
     cursor: pointer;
 }
 
-.bar{
+.bar {
     display: block;
     width: 28px;
     height: 5px;
@@ -1055,20 +1082,21 @@ li {
         width: 30%;
     }
 
-    .policyimg>img{
+    .policyimg>img {
         left: 10rem;
     }
 
-    .policy-text{
+    .policy-text {
         margin-bottom: 12rem;
     }
 
-    .client-img{
+    .client-img {
         bottom: 85rem;
     }
 }
 
-@media screen and (max-width: 1100px) and (min-width:1300px){
+@media screen and (max-width: 1100px) and (min-width:1300px) {
+
     html,
     body {
         width: 100%;
@@ -1079,241 +1107,1163 @@ li {
 }
 
 
-@media screen and (max-width: 1320px) and (min-width:1100px){
-    .nav-links{
+@media screen and (max-width: 1320px) and (min-width:1100px) {
+    .nav-links {
         flex-grow: .1;
     }
 }
 
 
-@media screen and (max-width: 899px) and (min-width:800px){
-    .nav-links{
+@media screen and (max-width: 899px) and (min-width:800px) {
+    .nav-links {
         flex-grow: 0.5;
         font-size: 0.78rem;
     }
 }
 
-@media screen and (max-width: 1099px) and (min-width:900px){
-    .nav-links{
+@media screen and (max-width: 1099px) and (min-width:900px) {
+    .nav-links {
         flex-grow: 0.38;
         font-size: 0.9rem;
     }
 }
 
-@media screen and (max-width:1010px) and (min-width:800px){
-    .hero-text>h1{
-        font-size: 2rem!important;
+@media screen and (max-width:1010px) and (min-width:800px) {
+    .hero-text>h1 {
+        font-size: 2rem !important;
     }
 
-    .hero-text>h3{
-        font-size: 1rem!important;
+    .hero-text>h3 {
+        font-size: 1rem !important;
         margin-bottom: -10px;
     }
 
-    #landing-title::before{
+    #landing-title::before {
         width: 7.2rem;
         height: 0.8rem;
     }
 }
 
-@media screen and (max-width:1230px) and (min-width:1100px){
+@media screen and (max-width:1230px) and (min-width:1100px) {
     /* #client{
         height: 293vh;
     } */
 }
 
-@media screen and (max-width:1200px) and (min-width:1000px){
-    .wrk-boxes{
+@media screen and (max-width:1200px) and (min-width:1000px) {
+
+
+    .herobtn {
+        margin: 1rem 0;
+    }
+
+    .hero-text>h1 {
+        font-size: 2rem !important;
+    }
+
+    .hero-text>h3 {
+        font-size: 1rem !important;
+        margin-bottom: -10px;
+    }
+
+
+    .wrk-boxes {
         font-size: 0.9rem;
     }
 
-    .pro-agency-text>h5,li{
+    .pro-agency-text>h5,
+    li {
         font-size: 0.9rem;
     }
 
-    .quality-text>p{
+    .quality-text>p {
         font-size: 0.9rem;
     }
 
-    .thepolicy>h5{
+    .thepolicy>h5 {
         font-size: 1rem;
     }
 
-    .mission{
+    .mission {
         top: -31.5rem;
     }
 
-    .vision{
+    .vision {
         top: -20rem;
     }
 
-    .strength{
+    .strength {
         top: -30rem;
     }
 
-    .client-list>li{
+    .client-list>li {
         font-size: 0.8rem;
     }
 
-    .contact-text>h3{
+    .contact-text>h3 {
         font-size: 0.9rem;
     }
 
-    .footer-main{
+    .footer-main {
         font-size: 0.9rem;
     }
 
-    #policy>h1{
-        font-size: 2rem!important;
-    }
-    #client>h1{
-        font-size: 2rem!important;
-    }
-    #contact>h1{
-        font-size: 2rem!important;
-    }
-    #services>h1{
-        font-size: 2rem!important;
+    #policy>h1 {
+        font-size: 2rem !important;
     }
 
-    .ourpolicy::before{
+    #client>h1 {
+        font-size: 2rem !important;
+    }
+
+    #contact>h1 {
+        font-size: 2rem !important;
+    }
+
+    #services>h1 {
+        font-size: 2rem !important;
+    }
+
+    .ourpolicy::before {
         width: 6.2rem;
         height: 0.6rem;
         margin-top: 0;
     }
-    .ourservice::before{
+
+    .ourservice::before {
         width: 6.2rem;
         height: 0.6rem;
         margin-top: 0;
     }
 
-    #landing-title2::before{
+    #landing-title2::before {
         width: 6.2rem;
         height: 0.6rem;
         /* margin-top: 0; */
     }
-    
-    #about>h1{
-        font-size: 2rem!important;
+
+    #about>h1 {
+        font-size: 2rem !important;
+    }
+
+    #landing-title::before {
+        width: 7rem;
+        height: 0.7rem;
     }
 }
 
-@media screen and (max-width:999px) and (min-width:800px){
-    .landing-title2{
-        font-size: 2rem!important;
-    }
-    
-    .landing-title2::before{
-        width: 8.2rem!important;
-        height: 0.6rem!important;
+@media screen and (max-width:999px) and (min-width:800px) {
+
+
+    .herobtn {
+        margin: 0.9rem 0;
     }
 
-    .hero-content2>h4{
+
+    .hero-text>h1 {
+        font-size: 2rem !important;
+    }
+
+    .hero-text>h3 {
+        font-size: 1rem !important;
+        margin-bottom: -10px;
+    }
+
+    .herobtn>a>button {
+        font-size: 1.8vw;
+    }
+
+
+    .landing-title2 {
+        font-size: 2rem !important;
+    }
+
+    .landing-title2::before {
+        width: 8.2rem !important;
+        height: 0.6rem !important;
+    }
+
+    .hero-content2>h4 {
         font-size: 0.9rem;
     }
-    
-    .wrk-boxes{
+
+    .wrk-boxes {
         font-size: 0.8rem;
     }
 
-    .pro-agency-text>h5,li{
+    .pro-agency-text>h5,
+    li {
         font-size: 0.8rem;
     }
 
-    .quality-text>p{
+    .quality-text>p {
         font-size: 0.8rem;
     }
 
-    .thepolicy>h5{
+    .thepolicy>h5 {
         font-size: 1rem;
     }
 
-    .mission{
+    .mission {
         top: -30.5rem;
     }
 
-    .vision{
+    .vision {
         top: -16rem;
     }
 
-    .strength{
+    .strength {
         top: -30rem;
         line-height: 33px;
     }
 
-    .client-list>li{
+    .client-list>li {
         font-size: 0.8rem;
     }
 
-    .contact-text>h3{
+    .contact-text>h3 {
         font-size: 0.9rem;
     }
 
-    .footer-main{
+    .footer-main {
         font-size: 0.9rem;
     }
-    .contact-img{
+
+    .contact-img {
         width: 25vw;
         bottom: 15rem;
     }
 
-    #contact{
+    #contact {
         margin-bottom: 5rem;
     }
 
-    .contact-img2{
+    .contact-img2 {
         width: 23vw;
         top: -5rem;
     }
-    
-    #policy>h1{
-        font-size: 2rem!important;
-    }
-    #client>h1{
-        font-size: 2rem!important;
-    }
-    #contact>h1{
-        font-size: 2rem!important;
-    }
-    #services>h1{
-        font-size: 2rem!important;
+
+    #policy>h1 {
+        font-size: 2rem !important;
     }
 
-    .ourpolicy::before{
-        width: 6.2rem;
-        height: 0.6rem;
-        margin-top: 0;
+    #client>h1 {
+        font-size: 2rem !important;
     }
-    .ourservice::before{
+
+    #contact>h1 {
+        font-size: 2rem !important;
+    }
+
+    #services>h1 {
+        font-size: 2rem !important;
+    }
+
+    .ourpolicy::before {
         width: 6.2rem;
         height: 0.6rem;
         margin-top: 0;
     }
 
-    #about>h1{
-        font-size: 2rem!important;
+    .ourservice::before {
+        width: 6.2rem;
+        height: 0.6rem;
+        margin-top: 0;
     }
- 
+
+    #about>h1 {
+        font-size: 2rem !important;
+    }
+
+    #landing-title::before {
+        width: 7rem;
+        height: 0.7rem;
+    }
+
 }
 
-@media screen and (max-width:799px){
-    .hamburger{
+@media screen and (max-width:799px) and (min-width:600px) {
+
+    .client-list {
+        display: flow-root;
+    }
+
+    .herobtn {
+        margin: 0.9rem 0;
+    }
+
+    .herobtn>a>button {
+        font-size: 2vw;
+    }
+
+    .workplace {
+        grid-template-columns: none;
+    }
+
+
+    .hero-text>h1 {
+        font-size: 2rem !important;
+    }
+
+    .hero-text>h3 {
+        font-size: 1rem !important;
+        margin-bottom: -10px;
+    }
+
+
+    .hero-text {
+        line-height: 12px;
+        margin: 55px 10px;
+    }
+
+    .hero-content {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .hero-text {
+        width: 100%;
+        z-index: 1;
+    }
+
+    .hero-img {
+        width: 45%;
+        bottom: 10rem;
+    }
+
+    .hero-img>svg {
+        height: 100%;
+    }
+
+    .landing-title2 {
+        font-size: 2rem !important;
+    }
+
+    .landing-title2::before {
+        width: 8.2rem !important;
+        height: 0.6rem !important;
+    }
+
+    .hero-content2>h4 {
+        font-size: 0.9rem;
+    }
+
+    .wrk-boxes {
+        font-size: 0.8rem;
+    }
+
+    .pro-agency-text>h5,
+    li {
+        font-size: 0.8rem;
+    }
+
+    .quality-text>p {
+        font-size: 0.8rem;
+    }
+
+    .thepolicy>h5 {
+        font-size: 0.75rem;
+    }
+
+    .mission {
+        top: -22.5rem;
+    }
+
+    .mission {
+        font-size: 0.75rem;
+    }
+
+    .vision {
+        top: -11rem;
+    }
+
+    .vision>h5 {
+        font-size: 0.75rem;
+    }
+
+    .strength {
+        top: -15rem;
+        line-height: 33px;
+    }
+
+    .client-list>li {
+        font-size: 0.8rem;
+    }
+
+    .contact-text>h3 {
+        font-size: 0.9rem;
+    }
+
+    .footer-main {
+        font-size: 0.9rem;
+    }
+
+    .contact-img {
+        width: 25vw;
+        bottom: 15rem;
+    }
+
+    #contact {
+        margin-bottom: 5rem;
+    }
+
+    .contact-img2 {
+        width: 23vw;
+        top: -5rem;
+    }
+
+    #policy>h1 {
+        font-size: 2rem !important;
+    }
+
+    #client {
+        margin-top: -15rem;
+    }
+
+    #client>h1 {
+        font-size: 2rem !important;
+    }
+
+    #contact>h1 {
+        font-size: 2rem !important;
+    }
+
+    #services>h1 {
+        font-size: 2rem !important;
+    }
+
+    .ourpolicy::before {
+        width: 6.2rem;
+        height: 0.6rem;
+        margin-top: 0;
+    }
+
+    .ourservice::before {
+        width: 6.2rem;
+        height: 0.6rem;
+        margin-top: 0;
+    }
+
+    #about>h1 {
+        font-size: 2rem !important;
+    }
+
+    #landing-title::before {
+        width: 7rem;
+        height: 0.7rem;
+    }
+}
+
+
+/* 
+@media screen and (max-width:599px) and (min-width:400px) {
+
+    .client-list {
+        display: flow-root;
+    }
+
+    .herobtn {
+        margin: 0.9rem 0;
+    }
+
+    .herobtn>a>button {
+        font-size: 2vw;
+    }
+
+
+    .workplace {
+        grid-template-columns: none;
+    }
+
+    .hero-text>h1 {
+        font-size: 2rem !important;
+    }
+
+    .hero-text>h3 {
+        font-size: 1rem !important;
+        margin-bottom: -10px;
+    }
+
+
+    .hero-text {
+        line-height: 12px;
+        margin: 55px 10px;
+    }
+
+    .hero-content {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .hero-text {
+        width: 100%;
+        z-index: 1;
+    }
+
+    .hero-img {
+        width: 45%;
+        bottom: 10rem;
+    }
+
+    .hero-img>svg {
+        height: 100%;
+    }
+
+    .landing-title2 {
+        font-size: 2rem !important;
+    }
+
+    .landing-title2::before {
+        width: 8.2rem !important;
+        height: 0.6rem !important;
+    }
+
+    .hero-content2>h4 {
+        font-size: 0.9rem;
+    }
+
+    .wrk-boxes {
+        font-size: 0.8rem;
+    }
+
+    .pro-agency-text>h5,
+    li {
+        font-size: 0.8rem;
+    }
+
+    .quality-text>p {
+        font-size: 0.8rem;
+    }
+
+    .thepolicy>h5 {
+        font-size: 0.75rem;
+    }
+
+    .mission {
+        top: -22.5rem;
+    }
+
+    .mission {
+        font-size: 0.75rem;
+    }
+
+    .vision {
+        top: -11rem;
+    }
+
+    .vision>h5 {
+        font-size: 0.75rem;
+    }
+
+    .strength {
+        top: -15rem;
+        line-height: 33px;
+    }
+
+    .client-list>li {
+        font-size: 0.8rem;
+    }
+
+    .contact-text>h3 {
+        font-size: 0.8rem;
+    }
+
+    .footer-main {
+        font-size: 0.9rem;
+    }
+
+    .contact-img {
+        width: 25vw;
+        bottom: 15rem;
+    }
+
+    #contact {
+        margin-bottom: 5rem;
+    }
+
+    .contact-img2 {
+        width: 23vw;
+        top: -5rem;
+    }
+
+    #policy>h1 {
+        font-size: 2rem !important;
+    }
+
+    #client {
+        margin-top: -15rem;
+    }
+
+    #client>h1 {
+        font-size: 2rem !important;
+    }
+
+    #contact>h1 {
+        font-size: 2rem !important;
+    }
+
+    #services>h1 {
+        font-size: 2rem !important;
+    }
+
+    .ourpolicy::before {
+        width: 6.2rem;
+        height: 0.6rem;
+        margin-top: 0;
+    }
+
+    .ourservice::before {
+        width: 6.2rem;
+        height: 0.6rem;
+        margin-top: 0;
+    }
+
+    #about>h1 {
+        font-size: 2rem !important;
+    }
+
+    #landing-title::before {
+        width: 7rem;
+        height: 0.7rem;
+    }
+} */
+
+
+
+@media screen and (max-width:399px) and (min-width:200px) {
+
+    #nav {
+        background: #fff;
+    }
+
+    .client-list {
+        display: flow-root;
+        display: flow;
+        width: 100%;
+        margin: auto;
+        top: 3rem;
+    }
+
+    .herobtn {
+        margin: 1rem 0;
+    }
+
+    .herobtn>a>button {
+        font-size: 3vw;
+        padding: 0.85rem;
+    }
+
+    .workplace {
+        grid-template-columns: none;
+    }
+
+    .nav-links ul li {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+
+    .hero-text>h1 {
+        font-size: 2rem !important;
+    }
+
+    .hero-text>h3 {
+        font-size: 1rem !important;
+        margin-bottom: -10px;
+    }
+
+    .h5-hero {
+        line-height: 20px !important;
+    }
+
+
+    .hero-text {
+        line-height: 0px;
+        margin: 55px 10px;
+    }
+
+    .hero-content {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .hero-text {
+        width: 100%;
+        z-index: 1;
+    }
+
+    .hero-img {
+        width: 60%;
+        bottom: 6rem;
+    }
+
+    .service-list {
+        background: none;
+    }
+
+    .service-list>.pro-agency>.pro-agency-text>li {
+        width: 100%;
+    }
+
+    .hero-img>svg {
+        height: 100%;
+    }
+
+    .landing-title2 {
+        font-size: 2rem !important;
+    }
+
+    .landing-title2::before {
+        width: 8.2rem !important;
+        height: 0.6rem !important;
+    }
+
+    .hero-content2>h4 {
+        font-size: 0.9rem;
+    }
+
+    .wrk-boxes {
+        font-size: 0.8rem;
+    }
+
+    .pro-agency-text>h5,
+    li {
+        font-size: 0.5rem;
+    }
+
+    .quality-text>p {
+        font-size: 0.5rem;
+    }
+
+    .thepolicy>h5 {
+        font-size: 0.75rem;
+    }
+
+    .thepolicy {
+        width: 100%;
+        padding: 0 2rem;
+    }
+
+    .vision {
+        top: -3rem;
+        margin: auto;
+        width: 100%;
+        padding: 0 2rem;
+    }
+
+    .mission {
+        top: 0;
+        width: 100%;
+        margin: auto;
+        left: 0%;
+    }
+
+    .mission {
+        font-size: 0.75rem;
+    }
+
+    .vision>h5 {
+        font-size: 0.75rem;
+    }
+
+    .strength {
+        top: 2rem;
+        line-height: 20px;
+        width: 100%;
+        font-size: 0.9rem;
+        line-height: 25px;
+    }
+
+    .strength>ul>li{
+        font-size: 0.85rem;
+    }
+
+    .client-list>li {
+        font-size: 0.8rem;
+    }
+
+    .contact-text>h3 {
+        font-size: 0.8rem;
+    }
+
+    .footer-main {
+        font-size: 0.9rem;
+    }
+
+    .contact-img {
+        width: 25vw;
+        bottom: 15rem;
+    }
+
+    #contact {
+        margin-bottom: 5rem;
+    }
+
+    .contact-img2 {
+        width: 23vw;
+        top: -5rem;
+    }
+
+    #policy>h1 {
+        font-size: 2rem !important;
+    }
+
+    #client {
+        margin-top: 3rem;
+    }
+
+    #client>h1 {
+        font-size: 2rem !important;
+    }
+
+    #contact>h1 {
+        font-size: 2rem !important;
+    }
+
+    #services {
+        width: 100%;
+    }
+
+    .contact-img{
+        top: -12rem;
+    }
+
+    .contact-img2{
+        top: 2rem;
+    }
+
+    #services>h1 {
+        font-size: 2rem !important;
+    }
+
+    .ourpolicy::before {
+        width: 6.2rem;
+        height: 0.6rem;
+        margin-top: 0;
+        left: 5%;
+    }
+
+    .ourservice::before {
+        width: 6.2rem;
+        height: 0.6rem;
+        margin-top: 0;
+        left: 5%;
+    }
+
+    #landing-title2::before {
+        left: 5%;
+    }
+
+    #about>h1 {
+        font-size: 2rem !important;
+    }
+
+    #about{
+        width: 100%;
+        margin-top: 3rem;
+        font-size: 0.75rem;
+    }
+
+    .contact-text>h3{
+        font-size: 0.75rem;
+    }
+
+    #landing-title::before {
+        width: 7rem;
+        height: 0.7rem;
+    }
+
+    .footer-main>h4{
+        font-size: 0.75rem;
+    }
+
+    .footer-main>a{
+        text-align: center;
+    }
+    .footer-main{
+        text-align: center;
+        font-size: 0.75rem;
+    }
+}
+
+
+@media screen and (max-width:599px) and (min-width:400px) {
+
+    #nav {
+        background: #fff;
+    }
+
+    .client-list {
+        display: flow-root;
+        display: flow;
+        width: 100%;
+        margin: auto;
+        top: 3rem;
+    }
+
+    .herobtn {
+        margin: 1rem 0;
+    }
+
+    .herobtn>a>button {
+        font-size: 3vw;
+        padding: 0.85rem;
+    }
+
+    .workplace {
+        grid-template-columns: none;
+    }
+
+    .nav-links ul li {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+
+    .hero-text>h1 {
+        font-size: 2rem !important;
+    }
+
+    .hero-text>h3 {
+        font-size: 1rem !important;
+        margin-bottom: -10px;
+    }
+
+    .h5-hero {
+        line-height: 20px !important;
+    }
+
+
+    .hero-text {
+        line-height: 0px;
+        margin: 55px 10px;
+    }
+
+    .hero-content {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .hero-text {
+        width: 100%;
+        z-index: 1;
+    }
+
+    .hero-img {
+        width: 60%;
+        bottom: 6rem;
+    }
+
+    .service-list {
+        background: none;
+    }
+
+    .service-list>.pro-agency>.pro-agency-text>li {
+        width: 100%;
+    }
+
+    .hero-img>svg {
+        height: 100%;
+    }
+
+    .landing-title2 {
+        font-size: 2rem !important;
+    }
+
+    .landing-title2::before {
+        width: 8.2rem !important;
+        height: 0.6rem !important;
+    }
+
+    .hero-content2>h4 {
+        font-size: 0.9rem;
+    }
+
+    .wrk-boxes {
+        font-size: 0.8rem;
+    }
+
+    .pro-agency-text>h5,
+    li {
+        font-size: 0.5rem;
+    }
+
+    .quality-text>p {
+        font-size: 0.5rem;
+    }
+
+    .thepolicy>h5 {
+        font-size: 0.75rem;
+    }
+
+    .thepolicy {
+        width: 100%;
+        padding: 0 2rem;
+    }
+
+    .vision {
+        top: -3rem;
+        margin: auto;
+        width: 100%;
+        padding: 0 2rem;
+    }
+
+    .mission {
+        top: 0;
+        width: 100%;
+        margin: auto;
+        left: 0%;
+    }
+
+    .mission {
+        font-size: 0.75rem;
+    }
+
+    .vision>h5 {
+        font-size: 0.75rem;
+    }
+
+    .strength {
+        top: 2rem;
+        line-height: 20px;
+        width: 100%;
+        font-size: 0.9rem;
+        line-height: 25px;
+    }
+
+    .strength>ul>li{
+        font-size: 0.85rem;
+    }
+
+    .client-list>li {
+        font-size: 0.8rem;
+    }
+
+    .contact-text>h3 {
+        font-size: 0.8rem;
+    }
+
+    .footer-main {
+        font-size: 0.9rem;
+    }
+
+    .contact-img {
+        width: 25vw;
+        bottom: 15rem;
+    }
+
+    #contact {
+        margin-bottom: 5rem;
+    }
+
+    .contact-img2 {
+        width: 23vw;
+        top: -5rem;
+    }
+
+    #policy>h1 {
+        font-size: 2rem !important;
+    }
+
+    #client {
+        margin-top: 3rem;
+    }
+
+    #client>h1 {
+        font-size: 2rem !important;
+    }
+
+    #contact>h1 {
+        font-size: 2rem !important;
+    }
+
+    #services {
+        width: 100%;
+    }
+
+    .contact-img{
+        top: -12rem;
+    }
+
+    .contact-img2{
+        top: 2rem;
+    }
+
+    #services>h1 {
+        font-size: 2rem !important;
+    }
+
+    .ourpolicy::before {
+        width: 6.2rem;
+        height: 0.6rem;
+        margin-top: 0;
+        left: 5%;
+    }
+
+    .ourservice::before {
+        width: 6.2rem;
+        height: 0.6rem;
+        margin-top: 0;
+        left: 5%;
+    }
+
+    #landing-title2::before {
+        left: 5%;
+    }
+
+    #about>h1 {
+        font-size: 2rem !important;
+    }
+
+    #about{
+        width: 100%;
+        margin-top: 3rem;
+        font-size: 0.75rem;
+    }
+
+    .contact-text>h3{
+        font-size: 0.75rem;
+    }
+
+    #landing-title::before {
+        width: 7rem;
+        height: 0.7rem;
+    }
+
+    .footer-main>h4{
+        font-size: 0.75rem;
+    }
+
+    .footer-main>a{
+        text-align: center;
+    }
+    .footer-main{
+        text-align: center;
+        font-size: 0.75rem;
+    }
+}
+
+
+
+
+@media screen and (max-width:799px) {
+    .hamburger {
         display: block;
     }
 
-    .hamburger.active .bar:nth-child(2){
+    .hamburger.active .bar:nth-child(2) {
         opacity: 0;
     }
 
-    .hamburger.active .bar:nth-child(1){
+    .hamburger.active .bar:nth-child(1) {
         transform: translateY(10px) rotate(45deg);
     }
 
-    .hamburger.active .bar:nth-child(3){
+    .hamburger.active .bar:nth-child(3) {
         transform: translateY(-10px) rotate(-45deg);
     }
 
-    .nav-links{
+    .nav-links {
         position: fixed;
         left: -100%;
         top: 85px;
@@ -1324,39 +2274,39 @@ li {
         transition: 0.3s;
         /* display: none; */
     }
-    
-    .nav-links ul{
+
+    .nav-links ul {
         flex-direction: column;
         margin: 0rem 0rem;
     }
-    
-    .nav-links ul li{
+
+    .nav-links ul li {
         flex-direction: column;
         padding: 0.8rem;
-        background-color: #6a61fbeb;
+        background-color: #6b61fb;
         backdrop-filter: blur(10px);
         border-bottom: 1px solid whitesmoke;
     }
 
- 
 
-    .nav-links ul li:hover{
+
+    .nav-links ul li:hover {
         background-color: rgb(224, 224, 224);
     }
 
-    .nav-links ul li a{
+    .nav-links ul li a {
         display: flex;
         justify-content: flex-start;
     }
 
-    .nav-links.active{
+    .nav-links.active {
         left: 0;
     }
 
-   
+
 }
 
- /* @media screen and (max-width:1326px) and (min-width:1200px){
+/* @media screen and (max-width:1326px) and (min-width:1200px){
     #client{
         height: 350vh;
     }
